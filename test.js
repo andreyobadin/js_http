@@ -1,5 +1,4 @@
 const request = require('request');
-let urlTest = 'https://eodhistoricaldata.com/api/technical/AAPL.US?api_token=61d6b23a084306.60499458&fmt=json&function=ema&period=100&from=2021-01-01';
 
 //--GET--
 let url = 'https://jsonplaceholder.typicode.com/todos/1';
@@ -51,3 +50,4 @@ request.post({url:customerUrl,form: customerLead,headers: {"Content-Type":"appli
   console.log('error: ',errorPOST);
 })
 
+request.post({url:'http://service.com/upload', form: {key:'value'}}, function(err,httpResponse,body){ console.log('status: ',httpResponsebody) })
